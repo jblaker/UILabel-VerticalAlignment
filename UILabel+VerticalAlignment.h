@@ -1,16 +1,18 @@
-// vertical alignment values
-typedef enum UITextVerticalAlignment {
-    UITextVerticalAlignmentTop,
-    UITextVerticalAlignmentMiddle,
-    UITextVerticalAlignmentBottom
-} UITextVerticalAlignment;
+#import <UIKit/UIKit.h>
+
+// Vertical Alignment Values
+typedef NS_ENUM(NSInteger, UITextVerticalAlignment) {
+  UITextVerticalAlignmentTop = 0,
+  UITextVerticalAlignmentMiddle,
+  UITextVerticalAlignmentBottom
+};
 
 @interface UILabel(VerticalAlignment)
 
-// getter
+// Getter
 -(UITextVerticalAlignment)textVerticalAlignment;
 
-// setter
+// Setter
 -(void)setTextVerticalAlignment:(UITextVerticalAlignment)textVerticalAlignment;
 
 @end
